@@ -1,0 +1,156 @@
+.product-list
+    background: #faede5
+    .description
+        font-size: 14px
+        padding-top: 30px
+        color: #cc9c82
+    .main-wrapper
+        @media(min-width: 1025px)
+            padding: 50px 0
+    .product-filter-button
+        width: 40px
+        height: 40px
+        background: #cc9c82
+        color: #ffffff
+        position: fixed
+        top: 50%
+        left: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        z-index: 33
+        transform: translateY(-50%)
+    .product-filter-wrapper
+        padding: 20px
+        border-radius: 10px
+        background: #fff
+        @media(min-width: 1025px)
+            padding: 30px
+        .item
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 0
+            .heading
+                padding-bottom: 5px
+                border-bottom: 2px solid #edc2ab
+                margin-bottom: 15px
+                h4
+                    font-size: 18px
+                    text-transform: uppercase
+                    font-family: Lato-Black
+            .options
+                .form-group
+                    label
+                        padding-left: 40px
+    .product-list-wrapper
+        .heading-wrapper
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            justify-content: space-between
+            padding-bottom: 10px
+            margin-bottom: 10px
+            border-bottom: 2px solid #edc2ab
+            @media(min-width: 1025px)
+                margin-bottom: 30px
+            h1
+                width: 100%
+                margin-bottom: 6px
+            .sort-by
+                margin-right: 10px
+                flex: 0 0 180px
+                position: relative
+                max-width: 180px
+                &::after
+                    content: '\f140'
+                    font: normal normal normal 24px/1 Material Design Icons
+                    position: absolute
+                    top: 50%
+                    right: 8px
+                    transform: translateY(-50%)
+                    font-size: 16px
+                select
+                    padding: 7px 10px
+                    border: 1px solid #edc2ab
+                    border-radius: 5px
+                    width: 100%
+                    color: #666
+                    font-size: 14px
+                    -webkit-appearance: none
+                    -moz-appearance: none
+            .product-display
+                display: flex
+                align-items: center
+                font-size: 14px
+                color: #666
+                a
+                    margin-left: 10px
+                    display: inline-block
+                    color: #a6a6a6
+                    em
+                        font-size: 26px
+                    &.active
+                        color: #edc2ab
+        @media(min-width: 1025px)
+            margin-top: 0
+            .heading-wrapper
+                justify-content: flex-start
+                h1
+                    margin-bottom: 0
+                    width: auto
+                .sort-by
+                    margin-right: 20px
+                    margin-left: auto
+        .button
+            margin-top: 20px
+            text-align: center
+            a
+                padding: 6px 20px
+    .product-item
+        box-shadow: 2.5px 4.33px 25px 0px rgba(237, 194, 171, 0.15)
+    .product-filter-button, .product-filter-close
+        display: none
+    @media(max-width: 1025px)
+        .product-filter-button
+            display: flex
+        .product-filter-wrapper
+            position: fixed
+            top: 0
+            left: -100%
+            height: 100vh
+            width: 100%
+            overflow-y: auto
+            z-index: 3233
+            transition: .4s ease-in-out all
+            &.active
+                left: 0
+                .product-filter-close
+                    opacity: 1
+                    pointer-events: initial
+        .product-filter-close
+            display: block
+            position: fixed
+            right: 0
+            top: 0
+            width: 40px
+            height: 40px
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #fff
+            transition: .4s ease-in-out all
+            background: #edc2ab
+            opacity: 0
+            pointer-events: none
+    .display
+        &.active
+            flex: 0 0 100%
+            max-width: 100%
+            .product-item
+                display: flex
+                .image
+                    width: 160px
+                    flex: 0 0 160px
+                .bottom-item
+                    width: 100%
+                    padding-left: 40px

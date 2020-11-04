@@ -1,0 +1,204 @@
+.shipment-detail
+    background: #faede6
+    h1
+        padding-bottom: 5px
+        border-bottom: 2px solid #edc2ab
+        margin-bottom: 15px
+        @media(min-width: 1025px)
+            margin-bottom: 30px
+    .box-wrapper
+        background: #fffffe
+        border-radius: 10px
+        overflow: hidden
+        + .box-wrapper
+            margin-top: 30px
+        .heading
+            padding: 10px 20px
+            font-size: 18px
+            text-transform: uppercase
+            color: #fff
+            background: #edc2ab
+            @media(min-width: 1025px)
+                padding: 10px 30px
+        .content
+            padding: 20px
+            @media(min-width: 1025px)
+                padding: 30px 40px
+            .method
+                label
+                    width: 100%
+                input:checked~label
+                    figure
+                        border-color: #deb0d1
+                        .ic
+                            border-right-color: #deb0d1
+                figure
+                    width: 100%
+                    display: flex
+                    border: 1px solid #ebebeb
+                    border-radius: 5px
+                    .ic
+                        flex: 0 0 70px
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        width: 70px
+                        border-right: 1px solid #ebebeb
+                        @media(min-width: 768px)
+                            flex: 0 0 120px
+                            height: 90px
+                            width: 120px
+                            
+                    figcaption
+                        padding: 10px
+                        h5
+                            font-size: 16px
+                            margin-bottom: 5px
+                        p
+                            font-size: 13px
+                            color: #999
+                        @media(min-width: 768px)
+                            padding: 15px
+            .form-group
+                position: relative
+                display: flex
+                align-items: center
+                margin-bottom: 20px
+                &:last-child
+                    margin-bottom: 0
+                .input-group
+                    + .input-group
+                        margin-left: 25px
+                input[type='text'], select, textarea
+                    padding: 8px 20px
+                    width: 100%
+                    border-radius: 5px
+                    border: 1px solid #deb0d1
+                    color: #666
+                .select
+                    width: 100%
+                    position: relative
+                    &::after
+                        position: absolute
+                        top: 50%
+                        right: 20px
+                        transform: translateY(-50%)
+                        font: normal normal normal 24px/1 Material Design Icons
+                        font-size: 16px
+                        content: "\f140"
+                    select
+                        -webkit-appearance: none
+                        -moz-appearance: none
+    .accept
+        margin: 25px 0
+        display: flex
+        input
+            margin-top: 5px
+            margin-right: 10px
+        label
+            user-select: none
+            font-size: 14px
+            a
+                color: #76c9d5
+                text-decoration: underline
+    .bottom-wrapper
+        .back
+            a
+                color: #999
+                em
+                    margin-right: 10px
+        .done
+            margin-top: 10px
+            a
+                width: 100%
+                display: block
+                padding: 8px 20px
+                font-size: 18px
+                background: #deb0d1
+                text-transform: uppercase
+                color: #ffffff
+                border-radius: 50px
+                text-align: center
+                em
+                    margin-right: 10px
+        @media(min-width: 1025px)
+            display: flex
+            align-items: center
+            justify-content: space-between
+            .done
+                margin-top: 0
+                a
+                    padding: 8px 50px
+    .cart-summary
+        margin-top: 30px
+        @media(min-width: 1025px)
+            margin-top: 0
+        .box-wrapper
+            .content
+                padding: 0 20px
+                @media(min-width: 1025px)
+                    padding: 0 40px
+        .heading
+            display: flex
+            align-items: center
+            justify-content: space-between
+        .item
+            padding: 20px 0
+            border-bottom: 1px solid #e8e8e8
+            @media(min-width: 1025px)
+                padding: 30px 0
+            figure
+                .image
+                    width: 140px
+                    height: 100px
+                    flex: 0 0 140px
+                    display: flex
+                    margin: 0 auto
+                    justify-content: center
+                    align-items: center
+                    border-radius: 10px
+                    border: 1px solid #edc2ab
+                    img
+                        max-width: 70px
+                figcaption
+                    margin-top: 10px
+                    p
+                        font-size: 14px
+                        margin-bottom: 5px
+                    span
+                        font-family: Lato-Regular
+                    .title
+                        display: block
+                        font-family: Lato-Semibold
+                        // margin-bottom: 5px
+                    .price
+                        font-size: 18px
+                        font-family: Lato-Semibold
+                        color: #76c9d5
+                @media(min-width: 576px)
+                    display: flex
+                    figcaption
+                        padding-left: 20px
+                        margin-top: 0
+                        p
+                            display: flex
+                            justify-content: space-between
+                            span
+                                &:nth-child(2)
+                                    white-space: nowrap
+                                    margin-left: 30px
+    .price-wrapper
+        padding: 20px 0
+        p
+            color: #666
+            display: flex
+            font-size: 18px
+            margin-bottom: 5px
+            align-items: center
+            justify-content: space-between
+            .price
+                color: #76c9d5
+        .total
+            padding-top: 15px
+            margin-top: 15px
+            border-top: 1px solid #e8e8e8

@@ -1,0 +1,278 @@
+.the-shine-shop-cart
+    background: #faede6
+    @media(min-width: 1025px)
+        padding-bottom: 55px
+    .shine-title
+        padding-bottom: 5px
+        border-bottom: 2px solid #edc2ab
+    .quantity-box
+        border-color: #deb0d1
+    .main-table
+        padding-top: 30px
+        table
+            width: 100%
+            thead 
+                background: #edc2ab
+                tr
+                    th 
+                        white-space: nowrap
+                        padding: 12px 30px
+                        font-size: 18px
+                        font-weight: 700
+                        color: #ffffff
+                        text-transform: uppercase
+                        text-align: center
+                        &:first-child
+                            border-top-left-radius: 10px
+                            text-align: left
+                        &:last-child
+                            border-top-right-radius: 10px
+                            text-align: right
+                            padding-right: 90px
+            tbody 
+                background: #fffefd
+                border-left: 1px solid #e1e1e1
+                border-right: 1px solid #e1e1e1
+                tr
+                    border-bottom: 1px solid #ebebeb
+                    // &:last-child
+                    //     border-bottom: none
+                    td 
+                        padding: 20px 
+                        @media(min-width: 1200px)
+                            padding: 30px
+                        &.name
+                            display: flex
+                            .image
+                                flex: 0 0 140px
+                                background: #fefefe
+                                border: 1px solid #edc2ab
+                                border-radius: 10px
+                                height: 101px
+                                width: 140px
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                position: relative
+                                overflow: hidden
+                                margin-right: 30px
+                                img 
+                                    position: absolute
+                                    object-fit: contain
+                                    max-width: 100%
+                                    max-height: 100%
+                                    padding: 10px
+                            .name-product
+                                display: flex
+                                align-items: flex-start
+                                position: relative
+                                h3 
+                                    font-size: 16px
+                                    font-weight: 700
+                                    color: #666666
+                                .delete-product
+                                    position: absolute
+                                    z-index: 11
+                                    left: 0
+                                    bottom: 0
+                                    a 
+                                        font-size: 14px
+                                        font-weight: 400
+                                        color: #999999
+                                        position: relative
+                                        display: flex
+                                        align-items: center
+                                        em 
+                                            font-size: 16px
+                                            color: #666666
+                                            transform: rotate(45deg)
+                                            line-height: 1  
+                                        span 
+                                            padding-left: 8px
+                        &.amount
+                            text-align: center
+                            width: 250px
+                            .input-number
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                border: 1px solid #deb0d1
+                                max-width: 120px
+                                margin: 0 auto
+                                border-radius: 5px
+                                input 
+                                    border: 0
+                                    background: #fff
+                                    width: 40px
+                                    height: 40px
+                                    text-align: center
+                                    font-size: 16px
+                                    color: #666666
+                            .btn-spin
+                                position: relative
+                                background: #ffffff
+                                width: 40px
+                                height: 40px
+                                line-height: 2.5rem
+                                text-align: center
+                                border-radius: 5px
+                                color: #666666
+                        &.discount
+                            text-align: center
+                            font-size: 16px
+                            font-weight: 400
+                            color: #666666
+                            text-decoration: line-through
+                        &.total 
+                            font-size: 18px
+                            font-weight: 700
+                            color: #76c9d5
+                            text-align: right 
+                            padding-right: 90px
+        @media(max-width: 1025px)
+            padding-top: 20px
+            table 
+                width: 100%
+                thead
+                    display: none
+                tr
+                    display: flex
+                    padding: 20px 0
+                    flex-wrap: wrap
+                    td
+                        padding: 0 10px!important
+                        width: 100%
+                        .image
+                            margin-right: 10px!important
+                            flex: 0 0 140px
+                    .amount, .discount, .total
+                        text-align: right!important
+                        margin-top: 4px
+                        width: 100%!important
+    .main-total-amount
+        padding: 25px 20px
+        background: #ffffff
+        display: flex
+        justify-content: flex-end
+        padding-right: 90px
+        border-left: 1px solid #e1e1e1
+        border-right: 1px solid #e1e1e1
+        .box-amount
+            width: 370px
+            margin-left: auto
+            .totalamount 
+                display: flex
+                justify-content: space-between
+                p  
+                    font-size: 16px
+                    font-weight: 400
+                    color: #666666
+                .price
+                    font-size: 20px
+                    font-weight: 700
+                    color: #666666
+                .total
+                    font-size: 20px
+                    font-weight: 700
+                    color: #76c9d5
+        .totalamount
+            display: flex
+            align-items: center
+            padding-bottom: 15px
+        @media(max-width: 1025px)
+            padding: 0 30px
+            padding-top: 20px
+    .main-discount
+        padding: 25px 20px
+        background: #ffffff
+        display: flex
+        justify-content: flex-end
+        padding-right: 90px
+        padding-bottom: 30px
+        border-left: 1px solid #e1e1e1
+        border-right: 1px solid #e1e1e1
+        padding-top: 0
+        .box-discount
+            max-width: 700px
+            margin-left: auto 
+            display: flex
+            justify-content: center
+            align-items: center
+            .title
+                padding-right: 35px
+                h5
+                    font-size: 16px
+                    font-weight: 400
+                    color: #edc2ab
+            .form-group
+                display: flex
+                justify-content: center
+                align-items: center
+                input 
+                    width: 360px
+                    height: 40px
+                    padding: 5px 20px
+                    border: 1px dashed #edc2ab
+                    border-top-left-radius: 5px
+                    border-bottom-left-radius: 5px
+                    border-right: none
+                button
+                    height: 40px
+                    border-top-right-radius: 5px
+                    border-bottom-right-radius: 5px
+                    border: 1px solid #deb0d1
+                    padding: 5px 30px
+                    width: 150px
+                    background: #edc2ab
+        @media(max-width: 1025px)
+            padding: 25px 20px
+            padding-top: 20px
+            .box-discount
+                flex-wrap: wrap
+                .title
+                    padding-bottom: 15px
+                .form-group
+                    input 
+                        width: 100%
+                    button
+                        padding: 5px 10px
+    .order-now
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        background: #fff
+        padding-right: 90px
+        padding-bottom: 70px
+        border-bottom-left-radius: 10px
+        border-bottom-right-radius: 10px
+        border-bottom: 1px solid #e1e1e1
+        border-left: 1px solid #e1e1e1
+        border-right: 1px solid #e1e1e1
+        button
+            border-radius: 25px
+            background: #deb0d1
+            border: 1px solid #deb0d1
+            height: 50px
+            font-size: 18px
+            font-weight: 400
+            color: #ffffff
+            text-transform: uppercase
+            min-width: 330px
+            em 
+                font-size: 24px
+                color: #ffffff
+                padding-right: 20px
+        @media(max-width: 1025px)
+            padding: 25px 20px
+            padding-top: 0
+            padding-bottom: 30px
+            button
+                min-width: 250px
+                max-width: 330px
+                padding: 5px 30px
+.the-shine-shop-cart-2
+    background: #faede6
+    .related-products-wrapper
+        margin-top: 0
+        .product-item
+            margin-bottom: 0

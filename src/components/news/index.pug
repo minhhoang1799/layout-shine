@@ -1,0 +1,20 @@
+section.tin-tuc.main-section
+    .container
+        h2.main-title Tin tức - sự kiện
+        .news-list
+            .row
+                -for(i=0;i<6;i++)
+                    .col-md-6.col-lg-4.item
+                        .news-item
+                            figure
+                                .image
+                                    a(href='#')
+                                        img(src="./img/news-1.png", alt="")
+                                figcaption
+                                    time 
+                                        a(href="#") Thứ ba, 23/07/2019, 06:30
+                                    h4 
+                                        a(href="#") KOP 2019 - tài xế Việt tranh tài xe bán tải
+                                    .content
+                                        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum suscipit est modi sit dolores, quaerat veritatis voluptatibus ut aspernatur, eligendi error ipsam commodi, dolorum perspiciatis reprehenderit tenetur impedit laboriosam nisi!
+                                    a(href="#").btn-viewmore  Xem thêm

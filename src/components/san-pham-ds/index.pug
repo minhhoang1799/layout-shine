@@ -1,0 +1,192 @@
+section.main-banner
+    .swiper-container
+        .swiper-wrapper
+            .swiper-slide
+                .image
+                    img(src="./img/banner-1.png", alt="")
+section.main-breadcrumb
+    .container
+        ul
+            li
+                a(href="#") Trang chủ
+            li
+                a(href="#") Danh mục sản phẩm
+            li
+                a(href="#") Sản phẩm chăm sóc da
+section.product-list
+    .container
+        p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem ape
+        .main-wrapper.py-4
+            .row
+                .col-lg-3
+                    .product-filter-button
+                        em.mdi.mdi-filter
+                    .product-filter-wrapper
+                        .product-filter-close
+                            em.mdi.mdi-close
+                        .item
+                            .heading
+                                h4 Giá tiền
+                            .options
+                                .form-group
+                                    input#cb-1(type="radio" name='price')
+                                    label(for='cb-1') Dưới 500.000 đ
+                                .form-group
+                                    input#cb-2(type="radio" name='price')
+                                    label(for='cb-2') Từ 500.000 đ - 1.000.000 đ
+                                .form-group
+                                    input#cb-3(type="radio" name='price')
+                                    label(for='cb-3') Từ 100.000 đ - 1.500.000 đ
+                                .form-group
+                                    input#cb-4(type="radio" name='price')
+                                    label(for='cb-4') Từ 200.000 đ - 5.000.000 đ
+                                .form-group
+                                    input#cb-5(type="radio" name='price')
+                                    label(for='cb-5') Trên 5.000.000 đ
+                        .item
+                            .heading
+                                h4 Xuất xứ
+                            .options
+                                .form-group
+                                    input#cb-6(type="radio" name='orgin')
+                                    label(for='cb-6') Hàn Quốc
+                                .form-group
+                                    input#cb-7(type="radio" name='orgin')
+                                    label(for='cb-7') Nhật Bản
+                                .form-group
+                                    input#cb-8(type="radio" name='orgin')
+                                    label(for='cb-8') Trung Quốc nội địa
+                                .form-group
+                                    input#cb-9(type="radio" name='orgin')
+                                    label(for='cb-9') Nga
+                                .form-group
+                                    input#cb-10(type="radio" name='orgin')
+                                    label(for='cb-10') Ukraina
+                        .item
+                            .heading
+                                h4 Làn da
+                            .options
+                                .form-group
+                                    input#cb-11(type="radio" name='skin')
+                                    label(for='cb-11') Da nhờn
+                                .form-group
+                                    input#cb-12(type="radio" name='skin')
+                                    label(for='cb-12') Da mụn
+                                .form-group
+                                    input#cb-13(type="radio" name='skin')
+                                    label(for='cb-13') Da dầu
+                                .form-group
+                                    input#cb-14(type="radio" name='skin')
+                                    label(for='cb-14') Da hỗn hợp
+                                .form-group
+                                    input#cb-15(type="radio" name='skin')
+                                    label(for='cb-15') Da nhạy cảm
+                        .item
+                            .heading
+                                h4 Thương hiệu
+                            .options
+                                .form-group
+                                    input#cb-16(type="radio" name='brand')
+                                    label(for='cb-16') Thương hiệu 1
+                                .form-group
+                                    input#cb-17(type="radio" name='brand')
+                                    label(for='cb-17') Thương hiệu 2
+                                .form-group
+                                    input#cb-18(type="radio" name='brand')
+                                    label(for='cb-18') Thương hiệu 3
+                                .form-group
+                                    input#cb-19(type="radio" name='brand')
+                                    label(for='cb-19') Thương hiệu 4
+                                .form-group
+                                    input#cb-20(type="radio" name='brand')
+                                    label(for='cb-20') Thương hiệu 5
+                        .item
+                            .heading
+                                h4 Giới tính
+                            .options
+                                .form-group
+                                    input#cb-21(type="radio" name='sex')
+                                    label(for='cb-21') Nam
+                                .form-group
+                                    input#cb-22(type="radio" name='sex')
+                                    label(for='cb-22') Nữ
+                .col-lg-9
+                    .product-list-wrapper
+                        .heading-wrapper
+                            h1.shine-title Sản phẩm chăm sóc da
+                            .sort-by
+                                select
+                                    option Giá giảm dần
+                                    option Giá tăng dần
+                                    option Mới nhất
+                            .product-display
+                                span Cột hay hàng: 
+                                a(href="javascript:void(0)" display='1').active
+                                    em.mdi.mdi-view-week
+                                a(href="javascript:void(0)" display='2')
+                                    em.mdi.mdi-view-list
+                        .list-item-wrapper
+                            .row
+                                -for(i=0;i<8;i++)
+                                    .col-md-4.col-6.col-xl-3.display
+                                        .product-item
+                                            .top-item
+                                                .image
+                                                    a(href='#')
+                                                        img(src="./img/pro-3.png", alt="")
+                                                .sale -10%
+                                                .hidden-wrap
+                                                    a.add-cart(href="#")
+                                                        em.fa.fa-shopping-basket
+                                                        span Thêm vào giỏ hàng
+                                                    a.view-detail(href="#")
+                                                        em.fa.fa-eye
+                                                        span Xem chi tiết
+                                            .bottom-item
+                                                h5.title 
+                                                    a(href="#") Bộ Kem Trị Nám Giori
+                                                .price
+                                                    span.new.black 350.000 ₫
+                                                    span.old 700.000 ₫
+                                                .flex
+                                                    .rate(data-rate=5)
+                                                        em.fa.fa-star
+                                                        em.fa.fa-star
+                                                        em.fa.fa-star
+                                                        em.fa.fa-star
+                                                        em.fa.fa-star
+                                                    .cart-button
+                                                        a(href="#")
+                                                            em.fa.fa-shopping-basket
+                                    .col-md-4.col-6.col-xl-3.display
+                                        .product-item
+                                            .top-item
+                                                .image
+                                                    a(href='#')
+                                                        img(src="./img/pro-2.png", alt="")
+                                                .sale -10%
+                                                .hidden-wrap
+                                                    a.add-cart(href="#")
+                                                        em.fa.fa-shopping-basket
+                                                        span Thêm vào giỏ hàng
+                                                    a.view-detail(href="#")
+                                                        em.fa.fa-eye
+                                                        span Xem chi tiết
+                                            .bottom-item
+                                                h5.title 
+                                                    a(href="#") Bộ Kem Trị Nám Giori
+                                                .price
+                                                    span.new.black 350.000 ₫
+                                                    span.old 700.000 ₫
+                                                .flex
+                                                    .rate(data-rate=1)
+                                                        em.fa.fa-star
+                                                        em.fa.fa-star
+                                                        em.fa.fa-star
+                                                        em.fa.fa-star
+                                                        em.fa.fa-star
+                                                    .cart-button
+                                                        a(href="#")
+                                                            em.fa.fa-shopping-basket
+                            .button.mt-1
+                                a(href="#").view-more-button Xem thêm sản phẩm

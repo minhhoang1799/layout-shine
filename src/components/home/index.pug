@@ -1,0 +1,629 @@
+section.home-banner
+    .swiper-container
+        .swiper-wrapper
+            .swiper-slide
+                .image-wrapper
+                    img(src="./img/home/banner-1.png", alt="")
+                .content-wrapper
+                    .container
+                        .row
+                            .col-lg-5
+                                p Trải nghiệm sản phẩm mới
+                                h1 Bộ Đôi Dưỡng Trắng Và Đặc Trị Nám Chuyên Sâu
+                                a(href="#")
+                                    em.fa.fa-shopping-basket
+                                    span Mua ngay
+            .swiper-slide
+                .image-wrapper
+                    img(src="./img/home/banner-1.png", alt="")
+                .content-wrapper
+                    .container
+                        .row
+                            .col-lg-5
+                                p Trải nghiệm sản phẩm mới
+                                h1 Bộ Đôi Dưỡng Trắng Và Đặc Trị Nám Chuyên Sâu
+                                a(href="#")
+                                    em.fa.fa-shopping-basket
+                                    span Mua ngay
+            .swiper-slide
+                .image-wrapper
+                    img(src="./img/home/banner-1.png", alt="")
+                .content-wrapper
+                    .container
+                        .row
+                            .col-lg-5
+                                p Trải nghiệm sản phẩm mới
+                                h1 Bộ Đôi Dưỡng Trắng Và Đặc Trị Nám Chuyên Sâu
+                                a(href="#")
+                                    em.fa.fa-shopping-basket
+                                    span Mua ngay
+        .swiper-pagination
+.home-1.py-5.pb-2
+    .container
+        .heading-wrapper.mb-3
+            .ic
+                img(src="./img/home/sale.png", alt="")
+            h2.shine-title KHUYẾN MÃI MỖI NGÀY
+            .button
+                a.view-more-button(href='#') Xem thêm
+        .list-item-wrapper
+            .row
+                -for(i=0;i<4;i++)
+                    .col-lg-3.col-md-4.col-6.col-xxl-2
+                        .product-item.border
+                            .top-item
+                                .image
+                                    a(href='#')
+                                        img(src="./img/pro-1.png", alt="")
+                                .sale -20%
+                                .hidden-wrap
+                                    a.add-cart(href="#")
+                                        em.fa.fa-shopping-basket
+                                        span Thêm vào giỏ hàng
+                                    a.view-detail(href="#")
+                                        em.fa.fa-eye
+                                        span Xem chi tiết
+                            .bottom-item
+                                h5.title 
+                                    a(href="#") Bộ Kem Trị Nám Giori Nhật Bản
+                                .price
+                                    span.new.black 350.000 ₫
+                                    span.old 700.000 ₫
+                                .flex
+                                    .rate(data-rate=3)
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                    .cart-button
+                                        a(href="#")
+                                            em.fa.fa-shopping-basket
+                    .col-lg-3.col-md-4.col-6.col-xxl-2
+                        .product-item.border
+                            .top-item
+                                .image
+                                    a(href='#')
+                                        img(src="./img/pro-2.png", alt="")
+                                .sale -20%
+                                .hidden-wrap
+                                    a.add-cart(href="#")
+                                        em.fa.fa-shopping-basket
+                                        span Thêm vào giỏ hàng
+                                    a.view-detail(href="#")
+                                        em.fa.fa-eye
+                                        span Xem chi tiết
+                            .bottom-item
+                                h5.title 
+                                    a(href="#") Son Shu Uemura chính hãng Nhật Bản
+                                .price
+                                    span.new.black 350.000 ₫
+                                    span.old 700.000 ₫
+                                .flex
+                                    .rate(data-rate=5)
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                    .cart-button
+                                        a(href="#")
+                                            em.fa.fa-shopping-basket
+                    .col-lg-3.col-md-4.col-6.col-xxl-2
+                        .product-item.border
+                            .top-item
+                                .image
+                                    a(href='#')
+                                        img(src="./img/pro-3.png", alt="")
+                                .sale -10%
+                                .hidden-wrap
+                                    a.add-cart(href="#")
+                                        em.fa.fa-shopping-basket
+                                        span Thêm vào giỏ hàng
+                                    a.view-detail(href="#")
+                                        em.fa.fa-eye
+                                        span Xem chi tiết
+                            .bottom-item
+                                h5.title 
+                                    a(href="#") Bộ Kem Trị Nám Giori
+                                .price
+                                    span.new.black 350.000 ₫
+                                    span.old 700.000 ₫
+                                .flex
+                                    .rate(data-rate=1)
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                    .cart-button
+                                        a(href="#")
+                                            em.fa.fa-shopping-basket
+.home-2.py-5.pb-2
+    .container
+        .heading-wrapper.mb-3
+            h2.shine-title Sản phẩm tốt nhất
+            .button
+                a.view-more-button(href='#') Xem thêm
+        .list-item-wrapper
+            .row
+                -for(i=0;i<4;i++)
+                    .col-lg-3.col-md-4.col-6.col-xxl-2
+                        .product-item
+                            .top-item
+                                .image
+                                    a(href='#')
+                                        img(src="./img/pro-1.png", alt="")
+                                .sale -20%
+                                .hidden-wrap
+                                    a.add-cart(href="#")
+                                        em.fa.fa-shopping-basket
+                                        span Thêm vào giỏ hàng
+                                    a.view-detail(href="#")
+                                        em.fa.fa-eye
+                                        span Xem chi tiết
+                            .bottom-item
+                                h5.title 
+                                    a(href="#") Bộ Kem Trị Nám Giori Nhật Bản
+                                .price
+                                    span.new.black 350.000 ₫
+                                    span.old 700.000 ₫
+                                .flex
+                                    .rate(data-rate=3)
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                    .cart-button
+                                        a(href="#")
+                                            em.fa.fa-shopping-basket
+                    .col-lg-3.col-md-4.col-6.col-xxl-2
+                        .product-item
+                            .top-item
+                                .image
+                                    a(href='#')
+                                        img(src="./img/pro-2.png", alt="")
+                                .sale -20%
+                                .hidden-wrap
+                                    a.add-cart(href="#")
+                                        em.fa.fa-shopping-basket
+                                        span Thêm vào giỏ hàng
+                                    a.view-detail(href="#")
+                                        em.fa.fa-eye
+                                        span Xem chi tiết
+                            .bottom-item
+                                h5.title 
+                                    a(href="#") Son Shu Uemura chính hãng Nhật Bản
+                                .price
+                                    span.new.black 350.000 ₫
+                                    span.old 700.000 ₫
+                                .flex
+                                    .rate(data-rate=5)
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                    .cart-button
+                                        a(href="#")
+                                            em.fa.fa-shopping-basket
+                    .col-lg-3.col-md-4.col-6.col-xxl-2
+                        .product-item
+                            .top-item
+                                .image
+                                    a(href='#')
+                                        img(src="./img/pro-3.png", alt="")
+                                .sale -10%
+                                .hidden-wrap
+                                    a.add-cart(href="#")
+                                        em.fa.fa-shopping-basket
+                                        span Thêm vào giỏ hàng
+                                    a.view-detail(href="#")
+                                        em.fa.fa-eye
+                                        span Xem chi tiết
+                            .bottom-item
+                                h5.title 
+                                    a(href="#") Bộ Kem Trị Nám Giori
+                                .price
+                                    span.new.black 350.000 ₫
+                                    span.old 700.000 ₫
+                                .flex
+                                    .rate(data-rate=1)
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                        em.fa.fa-star
+                                    .cart-button
+                                        a(href="#")
+                                            em.fa.fa-shopping-basket
+.home-3.py-5
+    .container
+        .main-wrapper
+            .heading-wrapper
+                h2.shine-title SẢN PHẨM CHĂM SÓC DA
+                .button
+                    a.view-more-button(href='#') Xem thêm
+            .list-item-wrapper
+                .row
+                    -for(i=0;i<4;i++)
+                        .col-lg-3.col-md-4.col-6.col-xxl-2
+                            .product-item
+                                .top-item
+                                    .image
+                                        a(href='#')
+                                            img(src="./img/pro-1.png", alt="")
+                                    .sale -20%
+                                    .hidden-wrap
+                                        a.add-cart(href="#")
+                                            em.fa.fa-shopping-basket
+                                            span Thêm vào giỏ hàng
+                                        a.view-detail(href="#")
+                                            em.fa.fa-eye
+                                            span Xem chi tiết
+                                .bottom-item
+                                    h5.title 
+                                        a(href="#") Bộ Kem Trị Nám Giori Nhật Bản
+                                    .price
+                                        span.new.black 350.000 ₫
+                                        span.old 700.000 ₫
+                                    .flex
+                                        .rate(data-rate=3)
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                        .cart-button
+                                            a(href="#")
+                                                em.fa.fa-shopping-basket
+                        .col-lg-3.col-md-4.col-6.col-xxl-2
+                            .product-item
+                                .top-item
+                                    .image
+                                        a(href='#')
+                                            img(src="./img/pro-2.png", alt="")
+                                    .sale -20%
+                                    .hidden-wrap
+                                        a.add-cart(href="#")
+                                            em.fa.fa-shopping-basket
+                                            span Thêm vào giỏ hàng
+                                        a.view-detail(href="#")
+                                            em.fa.fa-eye
+                                            span Xem chi tiết
+                                .bottom-item
+                                    h5.title 
+                                        a(href="#") Son Shu Uemura chính hãng Nhật Bản
+                                    .price
+                                        span.new.black 350.000 ₫
+                                        span.old 700.000 ₫
+                                    .flex
+                                        .rate(data-rate=5)
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                        .cart-button
+                                            a(href="#")
+                                                em.fa.fa-shopping-basket
+                        .col-lg-3.col-md-4.col-6.col-xxl-2
+                            .product-item
+                                .top-item
+                                    .image
+                                        a(href='#')
+                                            img(src="./img/pro-3.png", alt="")
+                                    .sale -10%
+                                    .hidden-wrap
+                                        a.add-cart(href="#")
+                                            em.fa.fa-shopping-basket
+                                            span Thêm vào giỏ hàng
+                                        a.view-detail(href="#")
+                                            em.fa.fa-eye
+                                            span Xem chi tiết
+                                .bottom-item
+                                    h5.title 
+                                        a(href="#") Bộ Kem Trị Nám Giori
+                                    .price
+                                        span.new.black 350.000 ₫
+                                        span.old 700.000 ₫
+                                    .flex
+                                        .rate(data-rate=1)
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                        .cart-button
+                                            a(href="#")
+                                                em.fa.fa-shopping-basket
+        .main-wrapper
+            .heading-wrapper
+                h2.shine-title SẢN PHẨM CHĂM SÓC tóc
+                .button
+                    a.view-more-button(href='#') Xem thêm
+            .list-item-wrapper
+                .row
+                    -for(i=0;i<4;i++)
+                        .col-lg-3.col-md-4.col-6.col-xxl-2
+                            .product-item
+                                .top-item
+                                    .image
+                                        a(href='#')
+                                            img(src="./img/pro-1.png", alt="")
+                                    .sale -20%
+                                    .hidden-wrap
+                                        a.add-cart(href="#")
+                                            em.fa.fa-shopping-basket
+                                            span Thêm vào giỏ hàng
+                                        a.view-detail(href="#")
+                                            em.fa.fa-eye
+                                            span Xem chi tiết
+                                .bottom-item
+                                    h5.title 
+                                        a(href="#") Bộ Kem Trị Nám Giori Nhật Bản
+                                    .price
+                                        span.new.black 350.000 ₫
+                                        span.old 700.000 ₫
+                                    .flex
+                                        .rate(data-rate=3)
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                        .cart-button
+                                            a(href="#")
+                                                em.fa.fa-shopping-basket
+                        .col-lg-3.col-md-4.col-6.col-xxl-2
+                            .product-item
+                                .top-item
+                                    .image
+                                        a(href='#')
+                                            img(src="./img/pro-2.png", alt="")
+                                    .sale -20%
+                                    .hidden-wrap
+                                        a.add-cart(href="#")
+                                            em.fa.fa-shopping-basket
+                                            span Thêm vào giỏ hàng
+                                        a.view-detail(href="#")
+                                            em.fa.fa-eye
+                                            span Xem chi tiết
+                                .bottom-item
+                                    h5.title 
+                                        a(href="#") Son Shu Uemura chính hãng Nhật Bản
+                                    .price
+                                        span.new.black 350.000 ₫
+                                        span.old 700.000 ₫
+                                    .flex
+                                        .rate(data-rate=5)
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                        .cart-button
+                                            a(href="#")
+                                                em.fa.fa-shopping-basket
+                        .col-lg-3.col-md-4.col-6.col-xxl-2
+                            .product-item
+                                .top-item
+                                    .image
+                                        a(href='#')
+                                            img(src="./img/pro-3.png", alt="")
+                                    .sale -10%
+                                    .hidden-wrap
+                                        a.add-cart(href="#")
+                                            em.fa.fa-shopping-basket
+                                            span Thêm vào giỏ hàng
+                                        a.view-detail(href="#")
+                                            em.fa.fa-eye
+                                            span Xem chi tiết
+                                .bottom-item
+                                    h5.title 
+                                        a(href="#") Bộ Kem Trị Nám Giori
+                                    .price
+                                        span.new.black 350.000 ₫
+                                        span.old 700.000 ₫
+                                    .flex
+                                        .rate(data-rate=1)
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                        .cart-button
+                                            a(href="#")
+                                                em.fa.fa-shopping-basket
+        .main-wrapper
+            .heading-wrapper
+                h2.shine-title SẢN PHẨM CHĂM SÓC Body
+                .button
+                    a.view-more-button(href='#') Xem thêm
+            .list-item-wrapper
+                .row
+                    -for(i=0;i<4;i++)
+                        .col-lg-3.col-md-4.col-6.col-xxl-2
+                            .product-item
+                                .top-item
+                                    .image
+                                        a(href='#')
+                                            img(src="./img/pro-1.png", alt="")
+                                    .sale -20%
+                                    .hidden-wrap
+                                        a.add-cart(href="#")
+                                            em.fa.fa-shopping-basket
+                                            span Thêm vào giỏ hàng
+                                        a.view-detail(href="#")
+                                            em.fa.fa-eye
+                                            span Xem chi tiết
+                                .bottom-item
+                                    h5.title 
+                                        a(href="#") Bộ Kem Trị Nám Giori Nhật Bản
+                                    .price
+                                        span.new.black 350.000 ₫
+                                        span.old 700.000 ₫
+                                    .flex
+                                        .rate(data-rate=3)
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                        .cart-button
+                                            a(href="#")
+                                                em.fa.fa-shopping-basket
+                        .col-lg-3.col-md-4.col-6.col-xxl-2
+                            .product-item
+                                .top-item
+                                    .image
+                                        a(href='#')
+                                            img(src="./img/pro-2.png", alt="")
+                                    .sale -20%
+                                    .hidden-wrap
+                                        a.add-cart(href="#")
+                                            em.fa.fa-shopping-basket
+                                            span Thêm vào giỏ hàng
+                                        a.view-detail(href="#")
+                                            em.fa.fa-eye
+                                            span Xem chi tiết
+                                .bottom-item
+                                    h5.title 
+                                        a(href="#") Son Shu Uemura chính hãng Nhật Bản
+                                    .price
+                                        span.new.black 350.000 ₫
+                                        span.old 700.000 ₫
+                                    .flex
+                                        .rate(data-rate=5)
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                        .cart-button
+                                            a(href="#")
+                                                em.fa.fa-shopping-basket
+                        .col-lg-3.col-md-4.col-6.col-xxl-2
+                            .product-item
+                                .top-item
+                                    .image
+                                        a(href='#')
+                                            img(src="./img/pro-3.png", alt="")
+                                    .sale -10%
+                                    .hidden-wrap
+                                        a.add-cart(href="#")
+                                            em.fa.fa-shopping-basket
+                                            span Thêm vào giỏ hàng
+                                        a.view-detail(href="#")
+                                            em.fa.fa-eye
+                                            span Xem chi tiết
+                                .bottom-item
+                                    h5.title 
+                                        a(href="#") Bộ Kem Trị Nám Giori
+                                    .price
+                                        span.new.black 350.000 ₫
+                                        span.old 700.000 ₫
+                                    .flex
+                                        .rate(data-rate=1)
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                            em.fa.fa-star
+                                        .cart-button
+                                            a(href="#")
+                                                em.fa.fa-shopping-basket
+.home-4.py-5
+    .container
+        .heading-wrapper
+            h2.shine-title blog làm đẹp
+            .button
+                a.view-more-button(href='#') Xem thêm
+        .list-item-wrapper
+            .row
+                .col-lg-6
+                    .blog-item.top-item
+                        a(href="#")
+                            figure
+                                .image
+                                    img(src="./img/news-1.png", alt="")
+                                figcaption
+                                    time 01/10/2019
+                                    h5.title Bí quyết giảm nếp nhăn vùng mắt giúp bạn sở hữu vẻ đẹp không tuổi
+                                    span Xem thêm
+                .col-lg-6
+                    .blog-item.part-item
+                        a(href="#")
+                            figure
+                                .image
+                                    img(src="./img/news-2.png", alt="")
+                                figcaption
+                                    time 01/10/2019
+                                    h5.title Bí quyết giảm nếp nhăn vùng mắt giúp bạn sở hữu vẻ đẹp không tuổi
+                                    span Xem thêm
+                    .blog-item.part-item
+                        a(href="#")
+                            figure
+                                .image
+                                    img(src="./img/news-2.png", alt="")
+                                figcaption
+                                    time 01/10/2019
+                                    h5.title Bí quyết giảm nếp nhăn vùng mắt giúp bạn sở hữu vẻ đẹp không tuổi
+                                    span Xem thêm
+                    .blog-item.part-item
+                        a(href="#")
+                            figure
+                                .image
+                                    img(src="./img/news-2.png", alt="")
+                                figcaption
+                                    time 01/10/2019
+                                    h5.title Bí quyết giảm nếp nhăn vùng mắt giúp bạn sở hữu vẻ đẹp không tuổi
+                                    span Xem thêm
+                    .blog-item.part-item
+                        a(href="#")
+                            figure
+                                .image
+                                    img(src="./img/news-2.png", alt="")
+                                figcaption
+                                    time 01/10/2019
+                                    h5.title Bí quyết giảm nếp nhăn vùng mắt giúp bạn sở hữu vẻ đẹp không tuổi
+                                    span Xem thêm
+.top-finding.py-5
+    .container
+        .heading-wrapper
+            h2.shine-title Top tìm kiếm
+        .list-item-wrapper
+            ul
+                li
+                    a(href="#") Kem chống nắng
+                li
+                    a(href="#") Son dưỡng
+                li
+                    a(href="#") Son lì
+                li
+                    a(href="#") Sữa rửa mặt 
+                li
+                    a(href="#") Bông tẩy trang
+                li
+                    a(href="#") Mặt nạ
+                li
+                    a(href="#") Kem dưỡng da
+                li
+                    a(href="#") Kem dưỡng ẩm Hada Labo
+                li
+                    a(href="#") Kem chống nắng
+                li
+                    a(href="#") Son dưỡng
+                li
+                    a(href="#") Son lì
+                li
+                    a(href="#") Sữa rửa mặt 
+                li
+                    a(href="#") Bông tẩy trang
+                li
+                    a(href="#") Mặt nạ
+                li
+                    a(href="#") Kem dưỡng da
+                li
+                    a(href="#") Kem dưỡng ẩm Hada Labo

@@ -1,0 +1,142 @@
+section.main-breadcrumb
+    .container
+        ul
+            li
+                a(href="#") Trang chủ
+            li
+                a(href="#") Giỏ hàng
+section.the-shine-shop-cart.py-5
+    .container
+        h1.shine-title Giỏ hàng
+        .main-table
+            table
+                thead
+                    tr 
+                        th Sản Phẩm
+                        th Số lượng 
+                        th Giảm giá
+                        th Thành tiền
+                tbody
+                    -for(x=0; x<3; x++)
+                        tr 
+                            td.name
+                                .image
+                                    img(src="./img/pro-1.png", alt="")
+                                .name-product
+                                    h3 Kem Dưỡng Ẩm Miracle Moisture Cream 50ml
+                                    .delete-product
+                                        a(href="#") 
+                                            em.mdi.mdi-plus-circle-outline
+                                            span Xoá
+                            td.amount
+                                .quantity-box
+                                    button -
+                                    input(type="text" value='1')
+                                    button +
+                            td.discount 20.000 đ
+                            td.total 320.000 ₫
+        .main-total-amount
+            .box-amount
+                .totalamount
+                    p Tạm tính
+                    span.price 1.700.000 ₫
+                .totalamount
+                    p Phí vận chuyển
+                    span.price 0 ₫
+                .totalamount
+                    p Cần thanh toán
+                    span.total 1.700.000 ₫
+        .main-discount
+            .box-discount
+                .title
+                    h5 Sử dụng mã giảm giá
+                .form-group
+                    input(placeholder="Nhập mã khuyến mãi")
+                    button ÁP DỤNG
+        .order-now
+            button
+                em.fa.fa-shopping-basket
+                | tiến hành đặt hàng
+section.the-shine-shop-cart-2.pb-5
+    .related-products-wrapper.other-wrapper
+        .container
+            .heading
+                h3.shine-title SẢN PHẨM tương tự
+                .swiper-navigation
+                    .swiper-navigation
+                        .swiper-prev
+                            em.lnr.lnr-chevron-left
+                        .swiper-next
+                            em.lnr.lnr-chevron-right
+            .list-item
+                .swiper-container
+                    .swiper-wrapper
+                        -for(i=0;i<10;i++)
+                            .swiper-slide
+                                .product-item
+                                    .top-item
+                                        .image
+                                            a(href='#')
+                                                img(src="./img/pro-3.png", alt="")
+                                        .sale -10%
+                                        .hidden-wrap
+                                            a.add-cart(href="#")
+                                                em.fa.fa-shopping-basket
+                                                span Thêm vào giỏ hàng
+                                            a.view-detail(href="#")
+                                                em.fa.fa-eye
+                                                span Xem chi tiết
+                                    .bottom-item
+                                        h5.title 
+                                            a(href="#") Bộ Kem Trị Nám Giori
+                                        .price
+                                            span.new.black 350.000 ₫
+                                            span.old 700.000 ₫
+                                        .flex
+                                            .rate(data-rate=5)
+                                                em.fa.fa-star
+                                                em.fa.fa-star
+                                                em.fa.fa-star
+                                                em.fa.fa-star
+                                                em.fa.fa-star
+                                            .cart-button
+                                                a(href="#")
+                                                    em.fa.fa-shopping-basket
+.top-finding.py-5
+    .container
+        .heading-wrapper
+            h2.shine-title Top tìm kiếm
+        .list-item-wrapper
+            ul
+                li
+                    a(href="#") Kem chống nắng
+                li
+                    a(href="#") Son dưỡng
+                li
+                    a(href="#") Son lì
+                li
+                    a(href="#") Sữa rửa mặt 
+                li
+                    a(href="#") Bông tẩy trang
+                li
+                    a(href="#") Mặt nạ
+                li
+                    a(href="#") Kem dưỡng da
+                li
+                    a(href="#") Kem dưỡng ẩm Hada Labo
+                li
+                    a(href="#") Kem chống nắng
+                li
+                    a(href="#") Son dưỡng
+                li
+                    a(href="#") Son lì
+                li
+                    a(href="#") Sữa rửa mặt 
+                li
+                    a(href="#") Bông tẩy trang
+                li
+                    a(href="#") Mặt nạ
+                li
+                    a(href="#") Kem dưỡng da
+                li
+                    a(href="#") Kem dưỡng ẩm Hada Labo

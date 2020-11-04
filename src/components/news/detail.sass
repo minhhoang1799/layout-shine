@@ -1,0 +1,70 @@
+.news-detail
+    time
+        font-size: 12px
+        color: #999999
+        font-weight: 500
+    h2
+        color: #edc2ab
+        font-size: 18px
+        @media(min-width: 1025px)
+            font-size: 24px
+        font-weight: 600
+    .heading
+        margin-bottom: 20px
+    .full-content
+        font-weight: 500
+        font-size: 15px
+        img
+            width: 100%
+    .news-other-heading
+        margin-top: 30px
+        // margin-bottom: 10px
+        padding: 6px
+        background: #a1dbe3
+        color: #fff
+        text-align: center
+        h3
+            font-size: 20px
+            font-weight: 600
+        @media(min-width: 1025px)
+            font-size: 30px
+            margin-top: 0
+    .news-other-item
+        &:last-child
+            a
+                border-bottom: 0
+        a
+            display: block
+            padding: 30px 0
+            border-bottom: 1px solid #dfdfdf
+            figure
+                display: flex
+                .image
+                    flex: 0 0 50%
+                    img
+                        width: 100%
+                figcaption
+                    padding-left: 10px
+                    h5
+                        font-weight: 600
+                        transition: .4s ease-in-out all
+                        color: #333333
+                        font-size: 13px
+                &:hover
+                    figcaption
+                        h5
+                            color: #a1dbe3
+.social-share
+    margin-top: 30px
+    .jssocials-shares
+        display: flex
+        &>div
+            + div
+                margin-left: 5px
+        a
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 30px
+            font-size: 10px
+            height: 30px

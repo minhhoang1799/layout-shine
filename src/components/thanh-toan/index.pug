@@ -1,0 +1,162 @@
+section.main-breadcrumb
+    .container
+        ul
+            li
+                a(href="#") Trang chủ
+            li
+                a(href="#") Giỏ hàng
+            li
+                a(href="#") Thông tin giao hàng
+section.shipment-detail.py-5
+    .container
+        h1.shine-title Thông tin giao hàng
+        .row
+            .col-lg-7
+                .box-wrapper
+                    .heading Thông tin cơ bản
+                    .content
+                        .form-group
+                            .input-group
+                                input#sex-1(type="radio" name='sex')
+                                label(for='sex-1') Anh
+                            .input-group
+                                input#sex-2(type="radio" name='sex')
+                                label(for='sex-2') Chị
+                        .form-group
+                            input(type="text" placeholder='Họ tên')
+                        .form-group
+                            input(type="text" placeholder='Email')
+                        .form-group
+                            input(type="text" placeholder='Địa chỉ')
+                        .form-group
+                            input(type="text" placeholder='Số điện thoại')
+                .box-wrapper
+                    .heading Địa chỉ giao hàng
+                    .content
+                        .form-group
+                            .select
+                                select
+                                    option Tỉnh/ Thành phố
+                        .form-group
+                            .select
+                                select
+                                    option Quận/ Huyện
+                        .form-group
+                            .select
+                                select
+                                    option Phường/ Xã
+                        .form-group
+                            textarea(placeholder='Ghi chú khác')
+                .box-wrapper
+                    .heading Phương thức thanh toán
+                    .content
+                        .form-group.method
+                            input#shipment1(type="radio" name='Shipment')
+                            label(for='shipment1')
+                                figure
+                                    .ic
+                                        img(src="./img/shipment-1.png", alt="")
+                                    figcaption
+                                        h5 Thanh toán bằng thử ATM nội địa
+                                        p Thẻ ATM của bạn cần đăng ký sử dụng dịch vụ Internet Banking. Bạn sẽ được quyền chuyển tới OnePay để thanh toán
+                        .form-group.method
+                            input#shipment2(type="radio" name='Shipment')
+                            label(for='shipment2')
+                                figure
+                                    .ic
+                                        img(src="./img/shipment-2.png", alt="")
+                                    figcaption
+                                        h5 Thanh toán thẻ visa, mastercard
+                                        p Hỗ trợ thẻ VISA, Mastercard, JCB, Amex. Bạn sẽ được chuyển tới OnePay để thanh toán
+                        .form-group.method
+                            input#shipment3(type="radio" name='Shipment')
+                            label(for='shipment3')
+                                figure
+                                    .ic
+                                        img(src="./img/shipment-3.png", alt="")
+                                    figcaption
+                                        h5 Thanh toán khi nhận hàng (COD)
+                                        p Quý khách sẽ thanh toán bằng tiền mặt khi The Shine Shop giao hàng cho quý khách
+                        .form-group.method
+                            input#shipment4(type="radio" name='Shipment')
+                            label(for='shipment4')
+                                figure
+                                    .ic
+                                        img(src="./img/shipment-4.png", alt="")
+                                    figcaption
+                                        h5 Chuyển khoản
+                                        p Quý khách thanh toán bằng cách chuyển khoản qua Internet Banking hoặc tại ngân hàng
+                .box-wrapper
+                    .heading Phương thức giao hàng
+                    .content
+                        .form-group
+                            .input-group
+                                input#shipment-4(type="radio" name='sex')
+                                label(for='shipment-4') Nhận tại cửa hàng
+                            .input-group
+                                input#shipment-5(type="radio" name='sex')
+                                label(for='shipment-5') Giao hàng tận nơi
+                .accept
+                    input#accept-input(type="checkbox")
+                    label(for='accept-input') Tôi đã đọc và đồng ý với 
+                        a(href="#") các điều khoản
+                .bottom-wrapper
+                    .back
+                        a(href="#")
+                            em.mdi.mdi-reply
+                            | Quay lại giỏ hàng
+                    .done
+                        a(href="#")
+                            em.fa.fa-shopping-basket
+                            | Thanh toán
+            .col-lg-5
+                .cart-summary
+                    .box-wrapper
+                        .heading Giỏ hàng
+                            a(href="#")
+                                em.fas.fa-pencil-alt
+                        .content
+                            .item
+                                figure
+                                    .image
+                                        img(src="./img/pro-1.png", alt="")
+                                    figcaption
+                                        p
+                                            span.title Kem Dưỡng Ẩm Miracle Moisture Cream 50ml
+                                            span.price 320.000 ₫
+                                        p
+                                            span Số lượng
+                                            span  x1
+                                        p
+                                            span Giảm giá 
+                                            span(style='text-decoration: line-through') 20.000 đ
+                            .item
+                                figure
+                                    .image
+                                        img(src="./img/pro-1.png", alt="")
+                                    figcaption
+                                        p
+                                            span.title Kem Dưỡng Ẩm Miracle Moisture Cream 50ml
+                                            span.price 320.000 ₫
+                                        p
+                                            span Màu sắc
+                                            span  Hồng
+                                        p
+                                            span Số lượng
+                                            span  x1
+                                        p
+                                            span Giảm giá 
+                                            span(style='text-decoration: line-through') 20.000 đ
+                            .price-wrapper
+                                p
+                                    span Tạm tính
+                                    span.price 1.700.000 ₫
+                                p
+                                    span VAT
+                                    span 0 ₫
+                                p
+                                    span Phí vận chuyển
+                                    span 0 ₫
+                                p.total
+                                    span Tổng cộng
+                                    span.price 1.700.000 ₫

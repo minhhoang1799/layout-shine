@@ -1,0 +1,340 @@
+header
+    // overflow: hidden
+    background-color: rgb(255, 255, 255)
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 444
+    box-shadow: 0px 0px 10px 0px rgba(222, 176, 209, 0.2)
+    .top-wrapper
+        padding: 20px 0
+        display: flex
+        align-items: center
+    .search-wrapper
+        margin-left: auto
+        width: 590px
+        .searchbox
+            position: relative
+        input
+            font-size: 14px
+            width: 100%
+            padding: 8px 20px
+            height: 40px
+            // font-size: 14px
+            border-radius: 40px
+            border: 1px solid #deb0d1
+            color: #999999
+            &:focus
+                outline: none
+            &:placeholder
+                color: #999999
+        button
+            width: 32px
+            height: 32px
+            right: 4px
+            top: 4px
+            position: absolute
+            background: #a1dbe3
+            border: 0
+            border-radius: 50%
+            color: #fff
+    .top-list-wrapper
+        margin-left: 40px
+        ul
+            display: flex
+            margin: 0 -20px
+            align-items: center
+            li
+                display: inline-flex
+                align-items: center
+                padding: 0 20px
+                a
+                    font-size: 14px
+                    display: flex
+                    align-items: center
+                    .ic
+                        position: relative
+                        display: inline-block
+                        margin-right: 15px
+                        em
+                            font-size: 30px
+                            color: #deb0d1
+                        span
+                            position: absolute
+                            top: -8px
+                            right: -5px
+                            width: 20px
+                            height: 20px
+                            border-radius: 50%
+                            background: #a1dbe3
+                            color: #ffffff
+                            display: inline-flex
+                            align-items: center
+                            justify-content: center
+                            font-size: 12px
+    .phone-wrapper
+        display: flex
+        margin-top: -20px
+        margin-left: auto
+        align-items: center
+        a
+            color: #deb0d1
+            white-space: nowrap
+            padding: 6px 20px
+            border-radius: 30px
+            border: 1px dashed #deb0d1
+            // height: 100%
+            em
+                margin-right: 10px
+            @media(max-width: 1200px)
+                font-size: 12px
+    .toggle-wrapper
+        width: 280px
+        display: flex
+        align-items: center
+        // border: 1px solid #c1c1c1
+        background: #deb0d1
+        padding: 10px 20px
+        position: relative
+        color: #fff
+        span
+            text-transform: uppercase
+        em
+            margin-right: 10px
+        &:hover
+            ul
+                top: 100%
+                opacity: 1
+                pointer-events: initial
+        ul
+            border: 1px solid #eddee9
+            border-top: 0
+            position: absolute
+            background: #fff
+            transition: .4s ease-in-out all
+            top: 150%
+            width: 280px
+            opacity: 0
+            pointer-events: none
+            left: 0
+            // width: 100%
+            color: #666
+            li
+                a
+                    padding: 7px 20px
+                    display: inline-block
+                    transition: .4s ease-in-out all
+                &:hover, &.active
+                        color: #deb0d1
+                &.has-drop
+                    position: relative
+                    &::after
+                        content: '\e88a'
+                        font-family: Linearicons-Free
+                        color: #deb0d1
+                        position: absolute
+                        top: 50%
+                        right: 20px
+                        transform: translateY(-50%)
+                        
+                    &>ul
+                        left: 150%
+                        opacity: 0
+                        pointer-events: none
+                        transition: .4s ease-in-out all
+                        border: 1px solid #eddee9
+                        top: 0
+                    &:hover
+                        &>ul
+                            left: 100%
+                            opacity: 1
+                            pointer-events: initial
+    .search-icon
+        display: none
+    .bottom-wrapper
+        display: flex
+    .main-list-wrapper
+        padding-left: 30px
+        ul
+            height: 100%
+            margin: 0 -20px
+            li
+                height: 100%
+                display: inline-flex
+                align-items: center
+                a
+                    transition: .4s ease-in-out all
+                    font-size: 16px
+                    color: #666
+                    text-transform: uppercase
+                    padding: 0 20px
+                &:hover, &.active
+                    a
+                        color: #deb0d1
+    @media(max-width: 1430px)
+        .search-wrapper
+            width: 450px
+        .toggle-wrapper
+            // width: 250px
+        .main-list-wrapper
+            ul
+                li
+                    a
+                        padding: 0 10px
+                        font-size: 14px
+    @media(max-width: 1200px)
+        .search-wrapper
+            width: 300px
+        .main-list-wrapper
+            ul
+                li
+                    a
+                        font-size: 14px
+                        padding: 0 10px
+        .toggle-wrapper
+            width: 50px
+            span
+                display: none
+    @media(max-width: 1025px)
+        // border-bottom: 1px solid #deb0d1
+        .phone-wrapper
+            display: none
+        .logo-wrapper
+            img
+                height: 40px
+        .top-wrapper
+            padding: 10px 0
+        .search-wrapper
+            // display: none
+            position: fixed
+            top: 162px
+            opacity: 0
+            pointer-events: none
+            left: 0
+            width: 100%
+            padding: 10px 0
+            background: #deb0d1
+            z-index: 34
+            transition: .4s ease-in-out all
+            &.active
+                opacity: 1
+                top: 62px
+                pointer-events: initial
+            .searchbox
+                margin: 0 auto
+                width: 100%
+                padding: 0 10px
+                max-width: 740px
+                button
+                    right: 14px
+        .search-icon
+            width: 35px
+            height: 35px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 50px
+            font-size: 20px
+            background: #a1dbe3
+            color: #fff
+            margin-left: auto
+        .top-list-wrapper
+            margin-left: 10px
+            ul
+                margin: 0
+                li
+                    padding: 0 10px
+                    a
+                        font-size: 0
+                        .ic
+                            margin-right: 0
+                            img
+                                height: 30px
+                            em
+                                font-size: 26px
+        .main-list-wrapper
+            margin-bottom: 10px
+            padding-left: 0
+            ul
+                font-family: 'Lato-Semibold'
+                background: #deb0d1
+                margin: 0
+                position: relative
+                top: auto
+                left: auto
+                padding: 10px 0
+                width: 100%
+                pointer-events: initial
+                opacity: 1
+                border: 0
+                li
+                    display: block
+                    a
+                        text-transform: none
+                        font-size: 16px
+                        padding: 8px 20px
+                        color: #fff
+        .toggle-wrapper
+            padding: 0
+            em
+                background: #deb0d1
+                width: 50px
+                height: 50px
+                position: fixed
+                z-index: 33
+                right: 0
+                top: 62px
+                margin-right: 0
+                padding: 0
+                display: flex
+                justify-content: center
+                align-items: center
+            span
+                display: none
+            &>ul
+                z-index: 32
+                overflow-y: auto
+                border: 0
+                width: 300px
+                position: fixed
+                top: 63px!important
+                pointer-events: initial
+                right: auto
+                opacity: 0
+                transition: .4s ease-in-out all
+                left: -300px
+                // width: 100%
+                height: calc(100vh - 60px)
+                &.active
+                    left: 0
+                    opacity: 1
+                li
+                    &.has-drop
+                        &::after
+                            top: 19px
+                            content: '\e888'
+                        ul
+                            border: 0
+                            padding-left: 10px
+                            transition: none
+                            display: none
+                            position: relative!important
+                            opacity: 1!important
+                            pointer-events: initial!important
+                            left: auto!important
+                            top: auto!important
+        .backdrop-wrapper
+            position: fixed
+            top: 62px
+            left: 0
+            z-index: 31
+            opacity: 0
+            pointer-events: none
+            width: 100%
+            transition: .4s ease-in-out all
+            height: calc(100vh - 60px)
+            background: rgba(#000,.5)
+            &.active
+                opacity: 1
+                pointer-events: initial
