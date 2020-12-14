@@ -1,0 +1,69 @@
+.form-user, .dk-wrapper
+    label
+        padding-left: 0
+        span
+            color: red
+        &:after
+                display: none
+    .formWrapper
+        max-width: 500px
+        margin: 0 auto
+    .form-group
+        display: flex
+        flex-direction: column
+        margin-top: 30px
+        &:first-child
+            margin-top: 0
+        label
+            padding-left: 10px
+            margin-bottom: 10px
+            span
+                color: red
+            &::after
+                display: none
+        input, textarea
+            width: 100%
+            height: 40px
+            border-radius: 20px
+            border: 1px solid #deb0d1
+            padding: 0 20px
+        textarea
+            height: 150px
+            @media (min-width: 1025px)
+                height: 250px
+    .form-btn
+        text-align: center
+        margin-top: 20px
+        button, a
+            width: 150px
+            height: 40px
+            border: none
+            background: #a1dbe3
+            color: #fff
+            border-radius: 20px
+        a
+            display: flex
+            align-items: center
+            justify-content: center
+    .btn-dangky
+        display: flex
+        justify-content: center 
+        margin: 20px 0
+        border-top: 1px dashed  #deb0d1
+    .form-check
+        margin: 10px
+        input
+            display: none
+        label
+            &:before
+                content: '\f1a2'
+                font: normal normal normal 24px/1 "Material Design Icons"
+                font-size: 18px
+                margin-right: 10px
+                color: #deb0d1
+        input:checked ~ label
+            &:before    
+                content: '\f132'
+.dk-wrapper
+    max-width: 500px
+    width: 100%

@@ -13,6 +13,7 @@
         "bower_components/plyr/dist/plyr.min.js",
         "bower_components/jquery-toast-plugin/dist/jquery.toast.min.js",
         "bower_components/jssocials/dist/jssocials.min.js",
+        "bower_components/fancybox/dist/jquery.fancybox.min.js",
         "bower_components/vanilla-lazyload/dist/lazyload.min.js"
     ],
     "css": [
@@ -22,6 +23,7 @@
         "bower_components/swiper/dist/css/swiper.min.css",
         "bower_components/plyr/dist/plyr.css",
         "bower_components/jquery-toast-plugin/dist/jquery.toast.min.css",
+        "bower_components/fancybox/dist/jquery.fancybox.min.css",
         "bower_components/jssocials/dist/jssocials-theme-flat.css"
     ]
 }

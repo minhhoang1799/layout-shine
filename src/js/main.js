@@ -216,6 +216,14 @@ function ProductDetailSlider() {
         }
     })
 }
+
+
+function toggleNavUser (){
+    $('.top-list-wrapper .user-wrapper').on('click', function(){
+        $('.nav-user').toggleClass('active')
+    })
+};
+
 $(document).ready(function() {
     App.SetBackground()
     App.InitLazyLoad()
@@ -228,4 +236,5 @@ $(document).ready(function() {
     BackToTop()
     ProductFilter()
     ProductDetailSlider()
+    toggleNavUser()
 })
