@@ -220,6 +220,7 @@ main
                 margin-right: 10px
             &.add-cart
                 background: #deb0d1
+                display: none
             &.view-detail
                 background: #edc2ab
     .title
@@ -241,16 +242,44 @@ main
                 color: #999999
                 font-size: 14px
                 text-decoration: line-through
-    .flex
-        margin-top: 15px
+.flex
+    margin-top: 15px
+    display: flex
+    flex-direction: column
+    input
         display: flex
         align-items: center
-        justify-content: space-between
-    
-    .cart-button
-        a
-            font-size: 20px
-            color: #deb0d1
+        justify-content: center
+        padding: 10px
+        font-size: 13px
+        border: none
+        text-align: center
+        border-radius: 30px
+        color: #ffffff
+        background: #deb0d1
+        position: relative
+        outline: none
+        width: 100%
+        &:hover
+            color: #ffffff
+            background: #deb0d1
+            text-decoration: underline
+.cart-button
+    position: relative
+    margin-top: 10px
+    em
+        position: absolute
+        top: 50%
+        left: 20px
+        transform: translateY(-50%)
+        z-index: 9
+        color: #fff
+        @media (max-width: 575px)
+            font-size: 12px
+            left: 10px
+    a
+        font-size: 20px
+        color: #deb0d1
 .rate
     font-size: 14px
     em
@@ -262,6 +291,7 @@ main
 .button
     margin-top: 10px
     .view-more-button
+        display: none !important
         display: inline-block
         padding: 6px 20px
         border-radius: 30px

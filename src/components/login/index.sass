@@ -31,7 +31,7 @@
             height: 150px
             @media (min-width: 1025px)
                 height: 250px
-    .form-btn
+    .form-btn, .form-btn-child
         text-align: center
         margin-top: 20px
         button, a
@@ -67,3 +67,25 @@
 .dk-wrapper
     max-width: 500px
     width: 100%
+.form-user-login
+    @media (min-width: 768px)
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        button,
+        a
+            width: 100% !important
+        .form-btn
+            flex: 0 0 50%
+            max-width: 50%
+            width: 100%
+            padding-right: 10px
+        .btn-dangky
+            padding-left: 10px
+            margin: 0
+            border: none
+            flex: 0 0 50%
+            max-width: 50%
+            .form-btn-child
+                width: 100%

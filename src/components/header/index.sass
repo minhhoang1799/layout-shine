@@ -6,16 +6,37 @@ header
     left: 0
     width: 100%
     z-index: 444
-    box-shadow: 0px 0px 10px 0px rgba(222, 176, 209, 0.2)
+    box-shadow: 0px 0px 10px 0px rgba(14, 4, 11, 0.2)
     .top-wrapper
         padding: 20px 0
         display: flex
         align-items: center
+        .logo-wrapper
+            @media (min-width: 1024px)
+                img
+                    width: 125px
+                    height: 75px
     .search-wrapper
         margin-left: auto
         width: 590px
         .searchbox
             position: relative
+            .has-validation-callback
+                position: relative
+                #search_ajax
+                    width: 100%
+                    position: absolute
+                    .dropdown-menu
+                        border: 1px solid #deb0d1
+                        border-radius: 20px
+                        width: 100%
+                        overflow: hidden
+                        .li_search_ajax
+                            @media (min-width: 1025px)
+                                &:hover
+                                    a
+                                        background-color: #deb0d1
+                                        color: #fff
         input
             font-size: 14px
             width: 100%
@@ -169,9 +190,20 @@ header
                     color: #666
                     text-transform: uppercase
                     padding: 0 20px
-                &:hover, &.active
-                    a
-                        color: #deb0d1
+    @media (min-width: 1025px)
+        .main-list-wrapper
+            ul
+                li
+                    &:hover, 
+                    &.active
+                        a
+                            color: #deb0d1
+                    .sub-menu
+                        li
+                            a
+                                color: #666
+
+
     @media(max-width: 1430px)
         .search-wrapper
             width: 450px
@@ -275,6 +307,9 @@ header
                         font-size: 16px
                         padding: 8px 20px
                         color: #fff
+                    &.has-drop
+                        a
+                            color: #666
         .toggle-wrapper
             padding: 0
             em
@@ -314,6 +349,7 @@ header
                         &::after
                             top: 19px
                             content: '\e888'
+                            display: none
                         ul
                             border: 0
                             padding-left: 10px
@@ -351,14 +387,48 @@ header
     background: #ffffff
     box-shadow: 0 0 10px 0 rgba(#000,.2)
     padding: 15px 10px
+    width: 150px
     li
         margin-bottom: 10px
         border-bottom: 1px dashed #a1dbe3
         padding-bottom: 5px !important
         width: 100%
+        a
+            font-size: 14px !important
         &:last-child
             margin-bottom: 0
             border: none
             padding-bottom: 0 !important
     &.active
         opacity: 1
+    @media (max-width: 768px)
+        left: 0
+        z-index: 99
+//css plus
+.dropdown
+    position: relative
+    i
+        margin-left: 5px
+    .sub-menu
+        display: none
+        flex-direction: column
+        justify-content: center
+        position: absolute
+        top: 100%
+        left: 20px
+        background: #ffffff
+        padding: 10px 0
+        box-shadow: 0 0 10px 0 rgba(#000,.3)
+        width: max-content
+        height: max-content
+        z-index: 999
+        &.active
+            display: flex
+        @media (min-width: 1025px)
+            .has-drop
+                a
+                    color: #666 !important
+                &:hover
+                    a
+                        color: #edc2ab
+        

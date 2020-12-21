@@ -10,8 +10,7 @@
         background: #fffffe
         border-radius: 10px
         overflow: hidden
-        + .box-wrapper
-            margin-top: 30px
+        margin-bottom: 30px
         .heading
             padding: 10px 20px
             font-size: 18px
@@ -20,10 +19,36 @@
             background: #edc2ab
             @media(min-width: 1025px)
                 padding: 10px 30px
-        .content
+        .content,
+        .cart-summary
             padding: 20px
+            input,
+            section,
+            textarea,
+            select
+                width: 100%
+                height: 40px
+                border-radius: 20px
+                border: 1px solid #deb0d1
+                padding: 0 20px
+            input,
+            section,
+            textarea
+                margin-bottom: 30px
+            textarea
+                padding-top: 20px
+                height: 100px
+            input[type=button]
+                height: 40px
+                margin-top: 30px
+                border: 1px solid #deb0d1
+                background: #deb0d1 !important
+                padding: 5px 30px
+                width: 100%
             @media(min-width: 1025px)
                 padding: 30px 40px
+                input
+                    width: 100%
             .method
                 label
                     width: 100%
@@ -202,3 +227,21 @@
             padding-top: 15px
             margin-top: 15px
             border-top: 1px solid #e8e8e8
+.cart-summary
+    input,
+    section,
+    textarea,
+    select
+        width: 100%
+        height: 40px
+        border-radius: 20px
+        border: 1px solid #deb0d1
+        padding: 0 20px
+    textarea
+        height: 100px
+    input[type=button]
+        height: 40px
+        border: 1px solid #deb0d1
+        background: #deb0d1 !important
+        padding: 5px 30px
+        width: 100%

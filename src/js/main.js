@@ -224,6 +224,14 @@ function toggleNavUser (){
     })
 };
 
+//active-subnav
+function navChild(){
+    $('.dropdown').on('click', function(){
+        $('.dropdown').toggleClass('active')
+        $('.sub-menu').toggleClass('active')
+    })
+}
+
 $(document).ready(function() {
     App.SetBackground()
     App.InitLazyLoad()
@@ -237,4 +245,5 @@ $(document).ready(function() {
     ProductFilter()
     ProductDetailSlider()
     toggleNavUser()
+    navChild()
 })

@@ -48,3 +48,29 @@ html(lang="en")
 			}(document, "script", "twitter-wjs"));
 		script(src="./js/core.min.js")
 		script(src="./js/main.min.js")
+		script(src='https://service-api.accesstrade.vn/js/v4/d2c.js')
+		script.
+			let options = {
+			tracking_url: "https://service-api.accesstrade.vn/api/v1",
+			campaign_id: 226,
+			ad_space_id: 12446,
+			language: "vi",
+			element_email: "scf_email input",
+			element_name: ".scf_input_name input",
+			element_phone: ".scf_input_phone input",
+			element_quantity: ".scf_input_quantity input",
+			element_note: ".scf_input_note input", //Nếu là thẻ input,
+			//element_note: ".scf_input_note textarea", //Nếu là thẻ textarea,
+			element_submit: ".scf_input_submit",
+			success: function() {
+			alert("Đăng ký thành công !!!");
+			},
+			error: function (errors) {
+			if (errors.name || errors.phone) {
+			alert("Đăng kí không thành công : " + errors.name.join() + " " + errors.phone.join());
+			} else {
+			console.log(errors.message);
+			}
+			},
+			};
+			D2C.init(options);

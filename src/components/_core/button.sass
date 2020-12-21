@@ -1,0 +1,72 @@
+.options
+    .ui-state-default
+        width: 20px !important
+        height: 20px !important
+        background: #edc2ab !important
+        border: 1px solid #edc2ab !important
+        outline: none
+        border-radius: 50%
+    .ui-slider-range
+        background: #deb0d1 !important
+    #slider-range
+        background: none !important
+        border: 1px solid #deb0d1 !important
+        border-radius: 5px
+    input[type=submit]
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 10px
+        font-size: 13px
+        border: none
+        text-align: center
+        border-radius: 30px
+        color: #ffffff
+        background: #deb0d1
+        position: relative
+        outline: none
+        width: 50%
+        &:hover
+            color: #ffffff
+            background: #deb0d1
+            text-decoration: underline
+//pagination
+.pagination
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    .page-item
+        margin: 0 10px
+        a
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            color: #deb0d1
+            background: #Fff
+            border: 1px solid #a1dbe3
+        &.active
+            span
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 40px
+                height: 40px
+                border-radius: 50%
+                color: #fff
+                background: #a1dbe3
+                border: 1px solid #a1dbe3
+        &:first-child,
+        &:last-child
+            a,span
+                background: none
+                border: none
+                font-size: 24px
+                color: #a1dbe3
+                font-size: 32px
+                font-weight: 700
+            &.disabled
+                opacity: 0
